@@ -12,3 +12,5 @@ jobs:
 
       - name: Run Write-good
         uses: ../actions/write-good-action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

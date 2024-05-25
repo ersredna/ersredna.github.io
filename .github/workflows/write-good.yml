@@ -1,0 +1,14 @@
+on: push
+
+name: Lint english prose
+
+jobs:
+  write-good:
+    name: Write-good
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Run Write-good
+        uses: ../actions/write-good-action

@@ -1,0 +1,12 @@
+name: 'Write-good Action'
+description: 'Lints english prose within .md files using btford/write-good'
+author: 'Anders Ehnes'
+
+inputs:
+  GITHUB_TOKEN:
+    description: 'GitHub token'
+    required: true
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
